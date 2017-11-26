@@ -2,6 +2,7 @@ FROM alpine:3.6
 
 RUN apk update && apk add --no-cache \
     bash \
+    shadow \
     make \
     musl-dev \
     gcc \

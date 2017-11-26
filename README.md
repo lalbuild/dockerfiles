@@ -1,6 +1,12 @@
 # lal demo environments
 These are available in public.
 
+## Requirements
+
+- usermod and groupmod inside the container
+- lal user inside the container
+- whatever you need to build your applications and libraries
+
 ## [alpine](https://hub.docker.com/r/clux/lal-alpine/tags/)
 A miniature musl C toolchain with almost no dependencies. **CC=musl-gcc** at 6.3.0.
 
