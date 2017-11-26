@@ -8,7 +8,7 @@ RUN apk update && apk add --no-cache \
     gcc \
     sudo
 
-RUN adduser -u 1000 -D -G wheel -s /bin/bash lal && \
+RUN useradd -ms /bin/bash lal -G wheel && \
     echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 VOLUME ["/home/lal/volume"]
